@@ -64,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
+  text-align: center;
+
 }
 
 h1 {
@@ -103,7 +105,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #F2F2F2;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -118,7 +120,9 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {
+  color: #c72754;
+}
 
 footer a {
   color: #F2F2F2;
@@ -304,7 +308,7 @@ Full-Width Styles
   color: #fff;
   font-size: 42px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #111 0px 0px 5px;
 }
 
 #project_tagline {
@@ -315,6 +319,18 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#menu {
+  text-align: center;
+  white-space: nowrap;
+  line-height: 12px;
+  overflow: hidden;
+}
+.menu_item {
+  width: 100px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
 #downloads {
   position: absolute;
   width: 210px;
@@ -363,7 +379,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #bb2435;
+  background: #c72754;
 }
 
 
