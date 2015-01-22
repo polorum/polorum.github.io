@@ -325,12 +325,20 @@ Full-Width Styles
   line-height: 12px;
   overflow: hidden;
   background-color: #373737;
+  width: 100%;
 }
+
 .menu_item {
   width: 100px;
   padding: 20px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.stick_top {
+    position: fixed;
+    top: 0px;
+    z-index:998;
 }
 #downloads {
   position: absolute;
