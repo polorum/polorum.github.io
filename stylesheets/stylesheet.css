@@ -142,14 +142,7 @@ img {
   margin: 0 auto;
   max-width: 739px;
   padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 p img {
@@ -301,22 +294,32 @@ Full-Width Styles
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
+  margin: auto;
 }
 
 #project_title {
-  margin: 0;
+  margin: auto;
   color: #fff;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 300;
   text-shadow: #111 0px 0px 5px;
+  padding-bottom: 20px;
 }
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 200;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: #111 0px 0px 5px;
+}
+
+#logo {
+  width: 30%;
+  margin: auto;
+  position: relative;
+  left: 35%;
+  padding-bottom: 30px;
 }
 
 #menu {
