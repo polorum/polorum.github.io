@@ -103,9 +103,14 @@ footer p {
   color: #f2f2f2;
 }
 
-a {
+menu a { 
   text-decoration: none;
   color: #F2F2F2;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
   text-shadow: none;
 
   transition: color 0.5s ease;
