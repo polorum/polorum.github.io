@@ -98,6 +98,7 @@ h6 {
 p {
   margin: 10px 0 15px 0;
 }
+img
 
 footer p {
   color: #f2f2f2;
@@ -147,7 +148,8 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 640px;
+  max-height: 428px;
   padding: 5px;
 
 }
