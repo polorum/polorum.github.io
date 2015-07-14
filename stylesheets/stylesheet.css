@@ -147,9 +147,9 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 640px;
+  max-height: 428px;
   padding: 5px;
-
 }
 
 p img {
