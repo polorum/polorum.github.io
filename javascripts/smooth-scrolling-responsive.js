@@ -1,28 +1,43 @@
 
-		$(document).ready(function() {
-     $("#toTop").hide();
+$(function() {
 
-            // fade in & out
-       $(window).scroll(function () {
-                    if ($(this).scrollTop() > 400) {
-                        $('#toTop').fadeIn();
-                    } else {
-                        $('#toTop').fadeOut();
-                    }
-                });     
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
-         $(this).click(function() {
-           $('html, body').animate({scrollTop: targetOffset}, 400);
-           return false;
-         });
-      }
-    }
-  });
+        // scroll handler
+        var scrollToAnchor = function( id ) {
+
+                // grab the element to scroll to based on the name
+                var elem = $("a[name='"+ id +"']");
+
+                // if that didn't work, look for an element with our ID
+                if ( !!elem ) {
+                        elem = $("#"+id);
+                }
+
+                // if the destination element exists
+                if ( !!elem ) {
+
+                        // do the scroll
+                        $('html, body').animate({
+                                scrollTop: elem.offset().top
+                        }, 1000 );
+
+                }
+        }
+
+        // bind to click event
+        $("a").click(function( event ) {
+
+                // only do this if it's an anchor link
+                if ( $(this).attr("href").match("#") ) {
+
+                        // cancel default event propagation
+                        event.preventDefault();
+
+                        // scroll to the location
+                        var href = $(this).attr('href').replace('#', '')
+                        scrollToAnchor( href );
+
+                }
+
+        });
+
 });
